@@ -2,4 +2,4 @@
   export let prompt;
 </script>
 
-User entered: <i>{prompt}</i>
+User entered: <i class="text-blue-500">{prompt}</i>
