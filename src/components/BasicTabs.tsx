@@ -11,7 +11,7 @@ interface TabPanelProps {
 }
 
 function CustomTabPanel(props: TabPanelProps) {
-  const { children, value, index, altChild, ...other } = props;
+  const { children, value, index, ...other } = props;
 
   return (
     <div
@@ -24,7 +24,6 @@ function CustomTabPanel(props: TabPanelProps) {
       {value === index && (
         <Box sx={{ p: 3 }}>
           <Typography>{children}</Typography>
-          {altChild}
         </Box>
       )}
     </div>
