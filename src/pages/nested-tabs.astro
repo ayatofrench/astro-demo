@@ -1,0 +1,12 @@
+---
+import LayoutWithNav from "../layouts/LayoutWithNav.astro";
+import NestedAstroTab from "../components/NestedAstroTab.astro";
+import BasicTabs from "../components/BasicTabs.tsx";
+---
+
+<LayoutWithNav title="Astro ❤️ HTMX">
+  <BasicTabs client:only="react">
+    <NestedAstroTab slot="name" />
+  </BasicTabs>
+</LayoutWithNav>
+
